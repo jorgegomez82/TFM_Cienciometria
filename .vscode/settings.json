@@ -1,0 +1,13 @@
+{
+    "python.pythonPath": "C:/Program Files/Python312/python.exe",
+    "python.analysis.extraPaths": [
+      "./scripts"
+    ],
+    "python.envFile": "${workspaceFolder}/seguridad.env",
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder}/scripts"
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": []
+  }
+  

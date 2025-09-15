@@ -1,0 +1,27 @@
+# Ignorar datasets grandes
+/data/raw/
+/data/enriquecido/
+/data/word2Vec/
+/data/mathbert/
+/data/tmp_articulos_abstract/
+
+# Ignorar idioma
+/idioma_modelo/
+
+# Ignorar scripts auxiliares no finales
+/scripts/otros/
+/scripts/embeddings/mathbert/otros/
+/scripts/recoleccionDatosAPI/abstractAPI/otros
+
+# Ignorar archivo log en la raíz
+/progreso_descarga.txt
+
+# Ignorar configuraciones sensibles
+*.env
+
+# Ignorar caches y compilados de Python
+__pycache__/
+*.pyc
+
+# Ignorar checkpoints de notebooks
+.ipynb_checkpoints/
