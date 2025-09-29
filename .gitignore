@@ -11,7 +11,7 @@
 # Ignorar scripts auxiliares no finales
 /scripts/otros/
 /scripts/embeddings/mathbert/otros/
-/scripts/embeddings/word2Vec/otros/
+/scripts/embeddings/word2Vec/otros
 /scripts/recoleccionDatosAPI/abstractAPI/otros
 
 # Ignorar archivo log en la raíz
