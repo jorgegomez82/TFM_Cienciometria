@@ -55,7 +55,7 @@ if args.solo_resumen:
     exit()
 
 # === CARGA DE VARIABLES DE ENTORNO ===
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 load_dotenv(os.path.join(BASE_DIR, "seguridad.env"))
 
 API_KEY = os.getenv("SCOPUS_API_KEY")
