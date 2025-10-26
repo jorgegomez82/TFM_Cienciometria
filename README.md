@@ -10,9 +10,8 @@ Se utilizan enfoques de **Word2Vec** y **MathBERT**, junto con técnicas de cien
 
 ```
 TFM_Cienciometria/
-├── data/
-│   ├── eid_articulos_scopus/  # eid de artículos de scopus (se guardan en Zenodo)
-│         
+├── logs/                  # Contiene los logs del proyecto
+│            
 ├── scripts/               # Scripts de procesamiento
 │   ├── embeddings/
 │   │   ├── word2Vec/      # Scripts para pipeline Word2Vec
