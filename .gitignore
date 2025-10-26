@@ -1,11 +1,5 @@
 # Ignorar carpeta data
-/data/enriquecido/
-/data/imagenes_resultados/
-/data/mathbert/
-/data/raw/
-/data/tmp_articulos_abstract/
-/data/word2Vec/
-/data/*.csv
+/data/
 
 # Ignorar idioma
 /idioma_modelo/
