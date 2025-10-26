@@ -10,23 +10,19 @@ Se utilizan enfoques de **Word2Vec** y **MathBERT**, junto con técnicas de cien
 
 ```
 TFM_Cienciometria/
-├── data/                  # Conjuntos de datos (NO versionados en GitHub, se guardan en Zenodo)
-│   ├── raw/               # Descargas iniciales desde la API de Scopus (por décadas)
-│   ├── enriquecido/       # Datos enriquecidos con metadatos adicionales
-│   ├── word2Vec/tmp/      # Resultados intermedios de Word2Vec
-│   ├── mathbert/tmp/      # Resultados intermedios de MathBERT
-│   └── tmp_articulos_abstract/
+├── data/
+│   ├── eid_articulos_scopus/  # eid de artículos de scopus (se guardan en Zenodo)
+│         
 ├── scripts/               # Scripts de procesamiento
 │   ├── embeddings/
 │   │   ├── word2Vec/      # Scripts para pipeline Word2Vec
 │   │   ├── mathbert/      # Notebook específico de MathBERT
 │   │   │   └── 04_mathbert_vectorizar.ipynb   # Se ejecuta en Colab
-│   │   ├── 05_computar_novedad_word2vec_mathbert.ipynb  # Se ejecuta en Colab
+│   │   ├── 05_computar_novedad_word2vec_mathbert.py  # Se ejecuta en Colab
 │   │   └── 06_visualizar_novedad_word2vec_mathbert.ipynb # Se ejecuta en Colab
 │   └── recoleccionDatosAPI/ # Descarga desde API de Scopus
 ├── README.md
 ├── requirements.txt
-└── ignorar.gitignore
 ```
 
 ---
@@ -89,23 +85,21 @@ En `/scripts/embeddings/mathbert/`, se ejecuta en Google Colab:
 
 ### 4. Cálculo de novedad (Word2Vec + MathBERT)
 Los dos notebooks compartidos para ambos enfoques (ejecutar en Colab):
-- **`05_computar_novedad_word2vec_mathbert.ipynb`**
-- **`06_visualizar_novedad_word2vec_mathbert.ipynb`**
+- **`05_computar_disrupcion_word2vec_mathbert.ipynb`**
+- **`06_visualizar_disrupción_word2vec_mathbert.ipynb`**
 
 ---
 
 ## 💾 Datos en Zenodo
-Debido al gran tamaño, los datasets no se incluyen en GitHub.  
-Se almacenan en **Zenodo**, organizados en carpetas comprimidas:
+Para cumplir con los términos de uso de la API de Scopus, este repositorio no contiene los metadatos brutos de los artículos. En su lugar, se publica en **Zenodo** el conjunto de datos oficial del proyecto, que consiste en la lista completa de identificadores (EIDs) de Scopus utilizados.
 
-- `raw/` → datos originales de Scopus (por décadas)
-- `enriquecido/` → datos enriquecidos con metadatos
-- `word2Vec/tmp/` → modelos entrenados y vectores
-- `mathbert/tmp/` → embeddings y resultados intermedios
+Publicar los EIDs garantiza la **total reproducibilidad** de la investigación, permitiendo que cualquier persona con acceso a Scopus pueda reconstruir el corpus original.
 
-Cada carpeta en Zenodo incluye un archivo `README.txt` explicativo.
+El dataset cuenta con un **DOI (Digital Object Identifier)**, lo que lo convierte en un recurso citable y permanente.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+➡️ **Accede y cita el conjunto de datos aquí:**
+
+[![DOI]](https://doi.org/10.5281/zenodo.17445712)
 
 ---
 

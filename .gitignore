@@ -1,9 +1,11 @@
-# Ignorar datasets grandes
-/data/raw/
+# Ignorar carpeta data
 /data/enriquecido/
-/data/word2Vec/
+/data/imagenes_resultados/
 /data/mathbert/
+/data/raw/
 /data/tmp_articulos_abstract/
+/data/word2Vec/
+/data/*.csv
 
 # Ignorar idioma
 /idioma_modelo/
